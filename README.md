@@ -6,6 +6,15 @@ Hensikten er å benytte disse under eksamen for emnet IMT1082 - OOProg.
 
 * Feil i `#include <biliotek>`.
 * Avsluttende `)`, `}`, osv.
+* Korrekt bruk av innebygde funksjoner: e.g. `strcpy` vs `strcmp`.
+* Korrekt bruk av `<` vs. `<=`.
+* Mangler `*` for pekere.
+* Korrekte parameter navn.
+* Ternary operation: `condition ? true : false`
+* `()` etter funksjonskall.
+* `->` vs `.` ved kalling av klasse/struct-metode. `->` ved bruk av peker, `.` ved vanlig variable.
+* `&` eller` *` ved refering til en peker/verdi, osv.
+* Sjekk for like variablenavn, variablemengde. E.g.: `arr` vs `arra`, `189` vs. `198`.
 
 ## Del 2
 
@@ -57,3 +66,13 @@ Se over om det er mulig å korte ned koden ved å benytte seg av `++i` eller `i+
 
 Se etter om det skrives ut antaller først eller om det kan benyttes bruk av `eof()`.
 Dette er også aktuelt når du selv skal lage en utskrift.  Tenk over hva er mest naturlig.
+
+### Ingen behov for å fylle ut feilmelding
+
+Vi er gitt tillatelse å sløyfe utfyllende kode for utskrift av feilmeldinger.  Derfor er det nok å skrive `Her kommer en feilmelding.`.
+
+### Korrekt bruk av `&`, `<type>*`, `<peker-variabel>*`
+
+* `&`: adressen til en variabel
+* `*<type>`: type peker definisjon
+* `<variabel>*`: derefering av en pekervariabel. (Hent ut verdien.)
