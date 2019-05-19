@@ -2,6 +2,14 @@
 
 Hensikten er å benytte disse under eksamen for emnet IMT1082 - OOProg.
 
+## Ting å ta med av skriftlige materiale
+
+* Denne!!!
+* Dataskrukturer: https://folk.ntnu.no/frh/ooprog/datastru.pdf
+* Pensumboken
+* Noen ferdigløste eksamenssett
+* Godt mot!
+
 ## Del 1
 
 * Feil i `#include <biliotek>`.
@@ -44,6 +52,12 @@ Klasse(char * navn) {
 
 Denne må brukes ved `les()`.  **NB!**  Pass på å se etter hvor `char *` brukes.
 
+### Slett pekere korrekt
+
+Enten `delete` eller `delete[]`.  Sistnevnte er for array.
+
+**NB!** Ved array av array, må en løkke benyttes for å slette.
+
 ### Starter løkken på 0 eller 1
 
 Siden løkker ofte starter på `1` og ikke `0`.  Må vi passe på å se hvor vi skal starte.  Pass også på riktig `<`,`<=`.
@@ -76,3 +90,16 @@ Vi er gitt tillatelse å sløyfe utfyllende kode for utskrift av feilmeldinger. 
 * `&`: adressen til en variabel
 * `*<type>`: type peker definisjon
 * `<variabel>*`: derefering av en pekervariabel. (Hent ut verdien.)
+
+### Benytt enkle variablenavn
+
+Navnene på variablene kan være like i klasse/struktmetoder.  F.eks.:
+
+```
+func save_name(char * name)
+{
+  this->name = name;
+}
+```
+
+Med slippes det å lage en midlertidig variabel.
