@@ -38,3 +38,22 @@ Denne må brukes ved `les()`.  **NB!**  Pass på å se etter hvor `char *` bruke
 ### Starter løkken på 0 eller 1
 
 Siden løkker ofte starter på `1` og ikke `0`.  Må vi passe på å se hvor vi skal starte.  Pass også på riktig `<`,`<=`.
+
+### Skriv ut status ved hjelp av en sjekk
+
+```
+cout << (objekt1 == "hamar") << endl;
+```
+
+Dette skriver ut `0` eller `1` etter hva sjekker svarer til. (Takk til E.)
+
+### Benytt `++` mest mulig
+
+Se over om det er mulig å korte ned koden ved å benytte seg av `++i` eller `i++`.
+
+**NB!** Pass på å ikke inkrementere flere steder.
+
+###  `!innfil` eller `!innfil.eof()`
+
+Se etter om det skrives ut antaller først eller om det kan benyttes bruk av `eof()`.
+Dette er også aktuelt når du selv skal lage en utskrift.  Tenk over hva er mest naturlig.
