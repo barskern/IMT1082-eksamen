@@ -102,4 +102,11 @@ func save_name(char * name)
 }
 ```
 
-Med slippes det å lage en midlertidig variabel.
+Med det slippes det å lage en midlertidig variabel.
+
+### Pekere & arrayer
+
+1. a = &a[0]
+2. a+i = &a[i]
+3. \*(a+i) = a[i]
+4. \*(cp+i) = cp[i]
